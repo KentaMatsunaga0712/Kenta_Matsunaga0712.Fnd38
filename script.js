@@ -9,7 +9,7 @@ const holes =document.querySelectorAll(".hole");
 
 //ゲーム中変化する値　グローバル
 let currentscore = 0;//現在のスコア
-let timeleft= 10;//残り時間
+let timeleft= 30;//残り時間
 let hitholeid = null;//モグラが出てるID
 let gametimeid = null;//タイマーID
 let moletimeid = null;//モグラタイマー
@@ -60,7 +60,7 @@ function startgame(){
     }
     gameactive=true;                       //ここからゲーム開始時の状態にする
     currentscore= 0;
-    timeleft =10;
+    timeleft =30;
     scoredisplay.textContent= currentscore;
     timeinfo.textContent = timeleft;
     startbutton.disabled=true;             //ＣＳＳで設定したボタン無効化を起動
